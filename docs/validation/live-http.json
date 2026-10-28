@@ -1,0 +1,758 @@
+[
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/gangsan/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/haneul/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/hankyeol/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/imcheong/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/jenny/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/jiyeon/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/noah/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/soyeon/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/sugyeong/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/designers/yuri/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/faq/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/gallery/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/reviews/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/services/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/services/color/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/services/cut/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/services/perm/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/services/treatment/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/en/visit/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/gangsan/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/haneul/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/hankyeol/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/imcheong/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/jenny/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/jiyeon/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/noah/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/soyeon/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/sugyeong/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/designers/yuri/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/faq/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/gallery/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/reviews/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/services/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/services/color/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/services/cut/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/services/perm/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/services/treatment/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ja/visit/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/gangsan/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/haneul/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/hankyeol/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/imcheong/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/jenny/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/jiyeon/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/noah/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/soyeon/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/sugyeong/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/designers/yuri/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/faq/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/gallery/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/reviews/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/services/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/services/color/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/services/cut/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/services/perm/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/services/treatment/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/ko/visit/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/gangsan/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/haneul/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/hankyeol/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/imcheong/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/jenny/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/jiyeon/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/noah/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/soyeon/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/sugyeong/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/designers/yuri/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/faq/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/gallery/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/reviews/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/services/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/services/color/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/services/cut/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/services/perm/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/services/treatment/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  },
+  {
+    "url": "https://leroro.github.io/koreahairsalon/zh/visit/",
+    "status": "200",
+    "sourceContent": true,
+    "langCorrect": true,
+    "hasH1": true,
+    "hasDescription": true,
+    "noindex": true
+  }
+]

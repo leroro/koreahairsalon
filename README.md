@@ -4,6 +4,8 @@
 
 [GitHub Pages](https://leroro.github.io/koreahairsalon/ko/) · [원본](https://www.koreahairsalon.kr/ko)
 
+2026-10-28 GitHub Actions 빌드·배포 성공. 공개 84개 URL의 HTTP 200 및 콘텐츠·언어 검사를 통과했다. 배포 코드 커밋 `60c0d6c`.
+
 ## 구현 범위
 
 2026-10-28 원본 사이트맵 및 내부 링크 기준으로 84개 URL을 수집했다. 국문·영문·일문·중문 각각 21개 페이지를 생성하며 원본 번체 중국어, 사진, 영상, 폰트, 디자인, 본문을 보존한다. 상세 경로에는 서비스 4개, 디자이너 개인 소개 10개, 갤러리, 방문 안내, 리뷰, FAQ가 포함된다.

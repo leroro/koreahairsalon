@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-28",
+  "repository": "leroro/koreahairsalon",
+  "commit": "60c0d6c48a44d59e4293e38a90a7a8e02444adab",
+  "tree": "1450310c317eac082c2b07b652019167f765ae22",
+  "uploadedFiles": 187,
+  "blobMismatches": 0,
+  "localAndRemoteTreeEqual": true,
+  "workflowRun": 40658141212,
+  "build": "success",
+  "deploy": "success",
+  "url": "https://leroro.github.io/koreahairsalon/ko/",
+  "browserChecks": [
+    "homepage-rendered",
+    "booking-menu-eight-channels",
+    "designer-list-navigation",
+    "designer-detail-navigation",
+    "designer-image-loaded"
+  ]
+}

@@ -38,4 +38,13 @@ Node.js 24.22.1 / Next.js 15.5.28 환경에서 `next build`를 실제 실행했�
 
 ## GitHub Pages
 
-로컬 검증 후 main에 반영하여 GitHub Actions 빌드·검증·배포를 실행한다. 원격 배포 및 실제 URL 확인 결과는 확인 후 아래에 추가한다.
+배포 완료 커밋 `60c0d6c48a44d59e4293e38a90a7a8e02444adab`.
+
+- [GitHub Actions run 40658141212](https://github.com/leroro/koreahairsalon/actions/runs/40658141212) 빌드·출력 검증·배포 모두 success
+- 187개 파일의 Git blob 해시 일치, 로컬 및 원격 전체 Git tree 일치
+- [실제 공개 사이트](https://leroro.github.io/koreahairsalon/ko/) 브라우저 접속·화면 확인
+- 공개 주소 84개 전부 HTTP 200, 본문·h1·description·언어·noindex 검사 통과
+- 공개 사이트에서 예약 메뉴, 디자이너 목록→개인 페이지 이동 및 사진 로딩 확인
+- 증거 `validation/deployment.json`, `validation/live-http.json`
+
+실제 URL 검사는 배포 이후 실행했다. 코드 배포를 반복하지 않도록 이 검증 기록만 추가하는 문서 커밋에는 `[skip ci]`를 사용한다. 배포된 코드의 커밋은 위에 명시한 커밋이다.
