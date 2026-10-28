@@ -1,24 +1,25 @@
-# Implementation gap register (2026-10-28)
+# 구현 상태와 제한 사항
 
-## Source-access verification
-Attempted direct requests to /ko and /sitemap.xml and preview /ko using available web reader. All returned inaccessible/cache-miss; no complete crawl or media download could be performed. **Do not call the sitemap exhaustive.**
+## 구현한 범위
 
-## Repository code review
-- `app/[locale]/[[...slug]]/page.tsx` renders 10 route patterns from one generic template.
-- `lib/content.ts` holds hard-coded locale strings and price arrays.
-- Original hero images, designer portraits, portfolios, reels and review widgets are absent.
-- Current Chinese content uses Simplified Chinese; source appears Traditional Chinese.
-- Existing preview metadata alternates link to the production host despite preview noindex.
-- `next.config.ts` exports static files to `/koreahairsalon` base path.
-- `package.json` has no typecheck or test scripts and no lockfile confirmed.
-- Build status and Pages publication are unverified.
+- 실제 사이트맵의 84개 페이지 및 언어별 원본 본문
+- 10명 디자이너 개인 소개, 서비스 세부, 방문 안내, 갤러리, 리뷰, FAQ
+- 이미지·영상·CSS·폰트 로컬 저장 및 프로젝트 경로 적용
+- 언어별 HTML lang, 제목·설명·canonical·hreflang·JSON-LD·사이트맵
+- 예약 채널, 모바일 메뉴, 사진 전환, 영상 컨트롤, FAQ, 언어 링크
+- 단계별 Next.js 빌드와 출력 검증, 실패 시 배포 차단
 
-## Priority and gates
-P0: obtain a successful reproducible build and retrieve Actions failure log; verify generated static route paths.
-P1: full source URL/link crawl; download/verify image and video assets and permissions.
-P2: build pixel-accurate Korean site from captured references; verify all links and mobile behavior.
-P3: translate and validate EN, JA, Traditional Chinese with locale-specific URLs.
-P4: metadata, hreflang, robots, XML sitemap, accessibility, link validation.
-P5: deploy, verify actual HTTPS response, capture screenshots and document deviations.
+## 원본과의 의도적인 차이
 
-**Blocked:** original website pages and XML sitemap inaccessible in current web reader. Build tooling dependency installation also unavailable locally. This document records observed limitations rather than claiming completion.
+- 원본의 서버 렌더링 HTML을 Next.js 페이지 데이터로 이식했다. 원본 React 컴포넌트 소스를 복구한 방식은 아니다.
+- 일부 등장 애니메이션은 제거하고 초기부터 콘텐츠가 보이도록 했다.
+- 릴스는 자동 재생 대신 사용자 재생 컨트롤을 제공한다.
+- 예약 메뉴와 모바일 메뉴의 동작은 별도 구현이므로 애니메이션·배치가 원본과 완전히 동일하지는 않다.
+- 원본 분석 추적 코드와 GTM은 복제본에서 실행하지 않는다.
+- GitHub Pages의 프로젝트 경로와 마지막 슬래시가 추가된다.
+
+## 남아 있는 검증 범위
+
+실제 점검 완료 범위는 VALIDATION.md에 기록한다. 외부 예약·메신저의 실제 전송, 지도 제공사의 지역·로그인별 동작, 모든 모바일 기종에서의 픽셀 단위 비교는 완료를 주장하지 않는다. 원본 리뷰 점수·상대 날짜는 수집 시점 값이며 실시간 갱신 기능은 없다.
+
+운영 도메인 전환 및 검색 색인 허용은 이번 GitHub Pages 검토용 배포의 범위에 포함하지 않는다.

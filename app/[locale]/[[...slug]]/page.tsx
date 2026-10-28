@@ -1,15 +1,20 @@
-import Link from 'next/link';
-import type {Metadata} from 'next';
-import {langs,menu,prices,type Lang} from '../../../lib/content';
-type Props={params:Promise<{locale:string;slug?:string[]}>};
-const paths=[[],['services'],['services','cut'],['services','perm'],['services','color'],['services','treatment'],['designers'],['about'],['location'],['faq']];
-export function generateStaticParams(){return langs.flatMap(locale=>paths.map(slug=>({locale,slug})))}
-export const dynamicParams=false;
-export async function generateMetadata({params}:Props):Promise<Metadata>{const {locale,slug=[]}=await params;const l=langs.includes(locale as Lang)?locale as Lang:'en';const d=menu[l];const label=slug.length?slug.join(' / '):d.home;return {title:`${label} | JUNO HAIR Gangnam Woosung`,description:d.sub,robots:{index:false,follow:false},alternates:{languages:Object.fromEntries(langs.map(k=>[k,`https://www.koreahairsalon.kr/${k}/${slug.join('/')}`]))}}}
-export default async function Page({params}:Props){const {locale,slug=[]}=await params;const l=langs.includes(locale as Lang)?locale as Lang:'en';const d=menu[l];const path=slug.join('/');const isHome=!path;const group=path.startsWith('services/')?({cut:0,perm:1,color:2,treatment:3} as Record<string,number>)[slug[1]]:undefined;const showPrices=isHome||path==='services'||group!==undefined;const showPeople=isHome||path==='designers';const showAbout=isHome||path==='about';const showLocation=isHome||path==='location';const showFaq=isHome||path==='faq';const title=path==='services'?d.services:group!==undefined?d.groups[group]:path==='designers'?d.designers:path==='about'?d.about:path==='location'?d.location:d.faq;const shownGroups=group===undefined?[0,1,2,3]:[group];return <><header className="nav"><Link className="brand" href={`/${l}/`}>JUNO HAIR</Link><nav><Link href={`/${l}/services/`}>{d.services}</Link><Link href={`/${l}/designers/`}>{d.designers}</Link><Link href={`/${l}/location/`}>{d.location}</Link></nav><div className="languages">{langs.map(k=><Link className={l===k?'active':''} key={k} href={`/${k}/${path}`}>{k.toUpperCase()}</Link>)}</div></header>{isHome?<section className="hero"><div className="eyebrow">SINCE 1982 · GANGNAM PREMIUM SALON</div><h1 style={{whiteSpace:'pre-line'}}>{d.hero}</h1><p>{d.sub}</p><a className="btn" href="tel:+8225370605">{d.book} · 02-537-0605</a></section>:<section className="subhero"><div className="eyebrow">JUNO HAIR · GANGNAM WOOSUNG</div><h1>{title}</h1><p>{d.sub}</p></section>}
-{showPrices&&<section className="section" id="services"><div className="tag">OUR SERVICES · KRW</div><h2>{d.services}</h2><p className="intro">{d.priceIntro}</p><div className="grid">{shownGroups.map(i=><div className="price" key={i}><h3><Link href={`/${l}/services/${['cut','perm','color','treatment'][i]}/`}>{d.groups[i]} ↗</Link></h3>{d.items[i].map((name,j)=><div className="line" key={name}><span>{name}</span><b>₩{prices[i][j]}</b></div>)}</div>)}</div><p className="note">{d.note}</p></section>}
-{showPeople&&<section className="section muted" id="designers"><div className="tag">OUR TEAM</div><h2>{d.designers}</h2><p className="intro">10 EXPERT DESIGNERS · PERSONAL CONSULTATION</p><div className="people">{d.names.map((name,i)=><article className="person" key={name}><span className="tag">0{i+1}</span><h3>{name}</h3><p>JUNO HAIR · GANGNAM WOOSUNG</p></article>)}</div></section>}
-{showAbout&&<section className="section" id="about"><div className="tag">JUNO HAIR · SINCE 1982</div><h2>{d.about}</h2><p className="intro">{d.aboutText}</p><p style={{fontFamily:'Georgia,serif',fontSize:30,marginTop:45,color:'#294235'}}>“Technique is the base; experience is the finish.”</p></section>}
-{showLocation&&<section className="section dark" id="location"><div className="tag">FIND US</div><h2>{d.location}</h2><p className="intro">{d.locationText}</p><dl className="details"><dt>ADDRESS</dt><dd>{d.locationText}</dd><dt>HOURS</dt><dd>{d.hours}</dd><dt>PHONE</dt><dd><a href="tel:+8225370605">02-537-0605</a></dd><dt>STATION</dt><dd>Gangnam Station · Exit 4 · 3 min walk</dd></dl><a className="btn" href="https://www.google.com/maps/search/?api=1&query=334+Gangnam-daero+Seoul" target="_blank" rel="noopener noreferrer">Google Maps ↗</a></section>}
-{showFaq&&<section className="section" id="faq"><div className="tag">HELP & INFORMATION</div><h2>{d.faq}</h2><div className="faq">{d.questions.map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div></section>}
-<footer className="footer"><div className="brand">JUNO HAIR</div><div>{d.locationText}</div><div>02-537-0605 · junogn3@naver.com</div><div>© JUNO HAIR Gangnam Woosung · Preview</div></footer></>}
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import source from '../../../lib/source-pages.json';
+import Interactions from '../../../lib/Interactions';
+const pages = source as Record<string, { head: Record<string, any>; css: string[]; body: string }>;
+type Props = { params: Promise<{ locale: string; slug?: string[] }> };
+export const dynamicParams = false;
+export function generateStaticParams() {
+ const locales = (process.env.BUILD_LOCALES || 'ko,en,ja,zh').split(',');
+ return Object.keys(pages).filter(p => locales.includes(p.split('/')[1])).map(p => { const [locale, ...slug] = p.slice(1).split('/'); return {locale, slug}; });
+}
+async function getPage(params: Props['params']) { const {locale, slug=[]}=await params; const path='/'+[locale,...slug].join('/'); const page=pages[path]; if(!page) notFound(); return {page,path,locale}; }
+export async function generateMetadata({params}: Props): Promise<Metadata> {
+ const {page,path}=await getPage(params); const h=page.head; const root='https://leroro.github.io/koreahairsalon';
+ return {title:h.title,description:h.description,keywords:h.keywords,robots:{index:false,follow:false},alternates:{canonical:root+path+'/',languages:Object.fromEntries(['ko','en','ja','zh'].map(l=>[l,root+path.replace(/^\/[a-z]{2}/,'/'+l)+'/']))},openGraph:{title:h['og:title']||h.title,description:h['og:description']||h.description,url:root+path+'/',type:'website',locale:h['og:locale'],siteName:h['og:site_name'],images:[{url:root+'/source-assets/media/store/store-1.jpg',alt:h['og:image:alt']||h.title}]},twitter:{card:'summary_large_image',images:[root+'/source-assets/media/store/store-1.jpg'],title:h['twitter:title']||h.title,description:h['twitter:description']||h.description}};
+}
+export default async function Page({params}: Props) {
+ const {page,locale}=await getPage(params);
+ return <>{page.css.map(href=><link key={href} rel="stylesheet" href={href}/>)}<div lang={page.head.lang||locale} id="source-page" dangerouslySetInnerHTML={{__html:page.body}}/>{page.head.jsonld.map((data:any,i:number)=><script key={i} type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data).replace(/</g,'\\u003c')}}/>)}<Interactions locale={locale}/></>;
+}

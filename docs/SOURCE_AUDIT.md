@@ -1,79 +1,35 @@
-# Existing site content audit
-Date: 2026-10-28
-Original: https://www.koreahairsalon.kr
-Status: **partial evidence-based inventory**, not a full browser crawl.
+# 원본 조사와 이식 방식
 
-## Homepage sections observed
-1. Hero: JUNO HAIR / SINCE 1982, Gangnam premium salon, Gangnam Station Exit 4, 3-minute walk, 10:00–20:30 daily.
-2. Reels/video salon section (clearly present on Korean home).
-3. Service and price overview: Cut & Styling (4), Perm (6), Color (4), Treatment & Scalp Care (6), total 20 listed services.
-4. Designers: 10 members with roles and specializations; individual social/profile links need inspection.
-5. Brand story: 1982 founding, Gangnam Woosung Intersection, director Im Chong.
-6. Portfolio: 8 women's hairstyle images and 8 men's hairstyle images in English homepage text; actual asset URLs and dimensions not yet captured.
-7. Directions/location: SM Tower 2F, 334 Gangnam-daero, Seoul, phone 02-537-0605, email junogn3@naver.com, Google/Naver directions, transit and parking.
-8. Google review section: score and review snippets displayed on source; must verify whether embedded, fetched, or static, and licensing/attribution before reproducing.
-9. Booking CTA: phone, Naver, Instagram; FAQ also mentions WhatsApp and LINE.
-10. FAQ: reservation, directions, hours, language support, scalp treatment, parking, discovery/search question.
+2026-10-28 원본 XML 사이트맵 및 링크 크롤링 결과, 국문·영문·일문·중문 각각 21개, 전체 84개 페이지에서 HTTP 200을 확인했다. 상세 URL은 SITEMAP.md를 참고한다.
 
-## Service inventory (KRW; ~ means starting price)
-| Category | Service (English) | Price |
-| --- | --- | ---: |
-| Cut | Cut | 35,000~ |
-| Cut | Blow Dry | 35,000~ |
-| Cut | Styling | 25,000~ |
-| Cut | Shampoo | 20,000~ |
-| Perm | Design Perm | 198,000~ |
-| Perm | Basic Women's Perm | 198,000~ |
-| Perm | Basic Men's Perm | 158,000~ |
-| Perm | Digital / Setting Perm | 250,000~ |
-| Perm | Volume Magic (Women) | 250,000~ |
-| Perm | Root Perm | 120,000~ |
-| Color | Root Color | 90,000~ |
-| Color | Personal Color | 150,000~ |
-| Color | Design Color (Ombré/Highlight) | 200,000~ |
-| Color | Bleach | 160,000~ |
-| Care | Signature Treatment | 128,000 |
-| Care | Premium Treatment | 198,000 |
-| Care | Rebuild Care | 220,000~ |
-| Care | Hinoki Scalp Clinic | 158,000 |
-| Care | Head Spa | 198,000 |
-| Care | Head Spa Plus | 238,000 |
+## 보존한 콘텐츠와 디자인
 
-Membership displayed: BLACK 20%, RED 15%, BLUE 10%, exclusions for cut/dry/partial services. Verify current terms before launch.
+원본 응답 HTML에서 본문, 헤딩, 시술 가격, 디자이너 10명과 개인 소개, 사진, 갤러리, 매장 이야기, 방문 안내, 리뷰, FAQ를 추출했다. 번역을 새로 작성하지 않고 각 언어의 실제 본문을 사용했으며 중문은 원본 번체를 보존했다. 원본 CSS와 Pretendard 웹폰트를 저장해 색상, 레이아웃, 타이포그래피, 반응형 규칙을 유지했다.
 
-## Designer names from English homepage
-Im Chong (Director), Noah (Deputy Director), Yuri (Deputy Director), Hankyeol (Chief Stylist), Haneul (Chief Stylist), Sugyeong (Chief Stylist), Soyeon (Chief Stylist), Jenny (Designer), Jiyeon (Designer), Gangsan (Chief Stylist). Source also lists individual specialties. Verify photos and Instagram links.
+원본 저장소의 React 소스는 제공되지 않았으므로 원본의 서버 렌더링 HTML을 데이터로 가져와 Next.js에서 정적 생성한다. `lib/source-pages.json`이 편집 가능한 페이지 데이터이고, `scripts/import-source.py`가 재현 가능한 추출기다. 기존 축약 콘텐츠 `lib/content.ts`는 이전 작업 참고용으로 보존하지만 현재 렌더링에 사용하지 않는다.
 
-## Locale/content observations
-- /ko: Korean page; prominent reels section.
-- /en: English page; includes hair salon near me, scalp treatment seoul, 美容院 phrases.
-- /ja: Japanese page; at least homepage and FAQ indexed.
-- /zh: Traditional Chinese wording (e.g., 髮, 燙, 預約). **Current repository zh content is simplified Chinese and needs correction.**
-- FAQ inconsistency: Japanese FAQ search excerpt mentions Gangnam Exit 11 in one answer while homepage says Exit 4. Resolve against business source before replication.
+## 기능
 
-## Important implementation gaps
-- Current preview omits reels, portfolio photos, review section and original outbound booking links.
-- Current preview contains shortened FAQ, simplified Chinese translations, invented marketing wording and incomplete metadata.
-- Exact image and video file URLs, typography, layout geometry, responsive behavior, menu states and accessibility require browser inspection.
-- Existing source may contain more pages than the 10 route patterns currently assumed. No claim of full crawl.
-- Metadata on preview must not use the live domain as its canonical while preview is noindex; check behavior before release.
+| 기능 | 원본 관찰 | 구현 |
+| --- | --- | --- |
+| 페이지·언어 이동 | 일반 링크, 4개 언어 | 프로젝트 경로를 붙인 정적 링크 |
+| FAQ | HTML details/summary | 원본 그대로, JavaScript 없이 작동 |
+| 예약·문의 | 전화·네이버·Instagram·WhatsApp·LINE·TikTok·Google·WeChat | 확인된 원본 URL로 메뉴 연결 |
+| 모바일 메뉴 | 작은 화면의 메뉴 버튼 | 기존 탐색 링크와 예약 채널 표시 |
+| 메인 사진 | 이미지 교차 전환 | 5초 간격 전환, 동작 줄이기 설정 존중 |
+| 릴스 | 8개 영상, 음소거, 가로 이동 | 로컬 MP4, 재생 컨트롤·음소거·이전/다음 |
+| 지도 | Google Maps iframe | 원본 임베드와 외부 길찾기 링크 유지 |
+| 리뷰 | 원본 HTML의 정적 12개 리뷰·5.0 표시 | 수집 시점 콘텐츠 보존, 실시간 API 아님 |
+| 추적 | GTM·원본 Next 런타임 | 복제본에서는 제거 |
 
-## Evidence URLs
-- https://www.koreahairsalon.kr/en
-- https://www.koreahairsalon.kr/ko
-- https://www.koreahairsalon.kr/ja
-- https://www.koreahairsalon.kr/zh
-- https://www.koreahairsalon.kr/en/services
-- https://www.koreahairsalon.kr/en/services/perm
-- https://www.koreahairsalon.kr/en/services/color
-- https://www.koreahairsalon.kr/en/services/treatment
-- https://www.koreahairsalon.kr/en/faq
-- https://www.koreahairsalon.kr/ja/faq
+예약 채널은 브라우저에서 원본 메뉴를 열어 확인했다. 외부 채널로 메시지나 실제 예약을 전송하지 않았다. 동영상 자동 재생 대신 사용자가 재생하는 컨트롤을 제공한다. 원본의 일부 등장 애니메이션은 초기 숨김 스타일을 해제하여 JavaScript 없이도 본문이 보이도록 했다.
 
-## Next audit tasks
-1. Obtain original sitemap.xml and robots.txt or perform complete internal-link crawl.
-2. Enumerate all distinct URLs including query strings and alternate language paths.
-3. Capture full HTML metadata and heading structure per URL.
-4. Inventory media with original paths, alt text, usage rights and dimensions.
-5. Capture mobile/desktop screenshots and interactions.
-6. Compare every source page against rebuilt preview and record gaps.
+## 증거와 재현
+
+- `source/sitemap.xml`과 `source/robots.txt` 원본 응답
+- `source/inventory.json` 84개 페이지의 본문·SEO·이미지·링크·기능 목록
+- `source/assets.json` 원본 자산 URL, 로컬 경로, 파일 크기, SHA-256
+- `../scripts/crawl.py` 사이트맵 및 내부 링크 크롤러
+- `../scripts/import-source.py` 콘텐츠·스타일·자산 이식기
+
+크롤러와 이식기는 Python 및 beautifulsoup4가 필요하다. 일반 빌드는 저장된 데이터를 사용하므로 원본 서버나 Python에 의존하지 않는다.

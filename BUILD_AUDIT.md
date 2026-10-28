@@ -1,28 +1,7 @@
-# Build and release audit — 2026-10-28
+# 빌드 검증
 
-## Stage 1: environment and repository inspection
+최신 검증 결과는 [docs/VALIDATION.md](docs/VALIDATION.md)를 참고한다.
 
-- Repository: leroro/koreahairsalon, main.
-- Node 22.16.0 and TypeScript CLI 5.8.3 are available in the local working environment.
-- The environment cannot resolve registry.npmjs.org. Next.js is not installed locally, so **npm install, npm run build and end-to-end validation have NOT passed**.
-- A prior GitHub Actions run was shown as failed by the repository owner. Exact failed job log has not yet been retrieved.
-- The last commit changed static route parameter generation, but the change has not been confirmed by a successful build.
-- Do not claim the site is deployed until an Actions success and live HTTP response are verified.
+기존 GitHub Actions run 40632884839는 `/robots.txt` 경로에 정적 생성 선언이 없어 실패했다. `app/robots.ts`에 `dynamic = 'force-static'`을 추가하여 해결했다.
 
-## Stage 2: source-site baseline
-
-- Source: https://www.koreahairsalon.kr/en
-- Four locales: ko, en, ja, zh.
-- Identified routes: locale home; services; services/cut, services/perm, services/color, services/treatment; designers; about; location; faq.
-- Service price data was checked against indexed source pages on 2026-10-28.
-- Existing homepage contains video/reels, women/men portfolio images, reviews, navigation links and more detailed FAQ not yet recreated.
-- Current GitHub implementation is an incomplete preview, not a faithful reproduction.
-
-## Release gates
-
-1. Capture full source inventory and assets; reconcile route count and content.
-2. Compile TypeScript and run Next.js production build in a network-enabled environment.
-3. Inspect generated out/ files and all locale routes.
-4. Check metadata, hreflang, canonical, robots noindex for preview, and basePath.
-5. Commit verified build; confirm successful GitHub Pages workflow.
-6. Open deployed site and inspect responsive pages, links and images.
+빌드와 출력 검증은 `npm run build:check`로 함께 실행한다. CI는 검사 실패 시 배포하지 않는다.

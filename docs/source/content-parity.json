@@ -1,0 +1,506 @@
+[
+  {
+    "route": "/en",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers/gangsan",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers/haneul",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers/hankyeol",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers/imcheong",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers/jenny",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers/jiyeon",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers/noah",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers/soyeon",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers/sugyeong",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/designers/yuri",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/faq",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/gallery",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/reviews",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/services",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/services/color",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/services/cut",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/services/perm",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/services/treatment",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/en/visit",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers/gangsan",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers/haneul",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers/hankyeol",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers/imcheong",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers/jenny",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers/jiyeon",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers/noah",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers/soyeon",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers/sugyeong",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/designers/yuri",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/faq",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/gallery",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/reviews",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/services",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/services/color",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/services/cut",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/services/perm",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/services/treatment",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ja/visit",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers/gangsan",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers/haneul",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers/hankyeol",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers/imcheong",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers/jenny",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers/jiyeon",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers/noah",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers/soyeon",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers/sugyeong",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/designers/yuri",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/faq",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/gallery",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/reviews",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/services",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/services/color",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/services/cut",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/services/perm",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/services/treatment",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/ko/visit",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers/gangsan",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers/haneul",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers/hankyeol",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers/imcheong",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers/jenny",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers/jiyeon",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers/noah",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers/soyeon",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers/sugyeong",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/designers/yuri",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/faq",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/gallery",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/reviews",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/services",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/services/color",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/services/cut",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/services/perm",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/services/treatment",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  },
+  {
+    "route": "/zh/visit",
+    "bodyTextEqual": true,
+    "imageCountEqual": true,
+    "headingsEqual": true
+  }
+]

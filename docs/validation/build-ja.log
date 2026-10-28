@@ -1,0 +1,71 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> koreahairsalon@0.1.0 build:check
+> npm run build && npm run verify
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> koreahairsalon@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.28
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 1207ms
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/68) ...
+   Generating static pages (17/68) 
+   Generating static pages (34/68) 
+   Generating static pages (51/68) 
+ ✓ Generating static pages (68/68)
+   Finalizing page optimization ...
+   Collecting build traces ...
+   Exporting (0/2) ...
+ ✓ Exporting (2/2)
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      127 B         103 kB
+├ ○ /_not-found                            990 B         104 kB
+├ ● /[locale]/[[...slug]]                1.99 kB         105 kB
+├   ├ /en
+├   ├ /en/designers
+├   ├ /en/designers/gangsan
+├   └ [+60 more paths]
+└ ○ /robots.txt                            127 B         103 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/255-d577389e1e4ce974.js       46.8 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          1.91 kB
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+
+> koreahairsalon@0.1.0 postbuild
+> node scripts/postbuild.mjs
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> koreahairsalon@0.1.0 verify
+> node scripts/verify-export.mjs
+
+{
+  "locales": [
+    "ko",
+    "en",
+    "ja"
+  ],
+  "pages": 63,
+  "checks": [
+    "html",
+    "language",
+    "metadata",
+    "local-assets",
+    "internal-links",
+    "no-dynamic-images",
+    "noindex"
+  ],
+  "result": "passed"
+}
